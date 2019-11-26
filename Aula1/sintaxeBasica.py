@@ -29,6 +29,9 @@ tuplas2 = 'item1','item2','item3' #tupla
 dicionarios = {'nome':'Rodnei','Sobrenome':'Azzola'} #dict
 numeros_complexo = 2j # Complex - número de raiz negativa
 
+#Variavel Nula
+nulo = None # variavel nula, zerar valor
+
 # print(texto.upper())
 # print(texto.title())
 # print(texto.strip())
@@ -46,4 +49,3 @@ verdadeiro = True
 false = False
 
 print(not(verdadeiro == False))
-

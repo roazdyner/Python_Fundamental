@@ -126,3 +126,10 @@
 
 
 print(float(input('Digite um numero: ')) + float(input('Digite outro numero: ')))
+
+
+## envio pro git-hub
+
+  #git add -A
+  #git commit -m "Aula 1"
+  #git push

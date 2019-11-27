@@ -63,9 +63,10 @@ with open('nomes.txt','r') as nomes:
 
 try:
     while True:
+        with open('nomes.txt','r') as nomes:
+            lista_nomes = [nome.replace('\n','') for nome in nomes.readlines()]
         #requisição pelo nome
         nome = input('Digite um nome: ').lower().strip()
-
         # para cada figura publica, vou validar o nome digitado
         if nome in figuras_publicas:
             cad_figura_publica = True
@@ -78,12 +79,14 @@ try:
         elif nome in lista_nomes:
             print('nome Já existe')
         elif nome == 'visualizar':
+            #with open('nomes.txt','r') as nomes:
+                #lista_nomes = [nome.replace('\n','') for nome in nomes.readlines()]
             for nome_cadastrado in lista_nomes:
                 print(nome_cadastrado.title(),end=', ')
             print('\n')
         else:
-            print('\n'*100)
-            with open('nomes.txt','a') as nome:
+            #print('\n'*100)
+            with open('nomes.txt','a') as nome_arquivo:
                 nome.write(nome + '\n')
             print('Cadastro Realizado')
             
